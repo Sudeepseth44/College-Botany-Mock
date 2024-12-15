@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botany Mock Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Botany Mock Test</h1>
+    <p>Choose a mock test to take:</p>
+    <div class="test-options">
+      <button onclick="window.location.href='botany-test.html'">Botany Mock Test</button>
+      <button onclick="window.location.href='zoology-test.html'">Zoology Mock Test</button>
+      <button onclick="window.location.href='physics-test.html'">Physics Mock Test</button>
+    </div>
+    <h3>Buy a Mock Test:</h3>
+    <div class="buy-options">
+      <button onclick="buyTest('botany')">Buy Botany Test</button>
+      <button onclick="buyTest('zoology')">Buy Zoology Test</button>
+      <button onclick="buyTest('physics')">Buy Physics Test</button>
+    </div>
+  </div>
+
+  <script>
+    function buyTest(testName) {
+      alert('Redirecting to payment for ' + testName + ' mock test.');
+      // Here you can integrate a payment gateway like Stripe/PayPal
+    }
+  </script>
+</body>
+</html>
